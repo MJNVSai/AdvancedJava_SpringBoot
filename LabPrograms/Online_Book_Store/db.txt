@@ -1,0 +1,41 @@
+create database bookstore;
+
+use bookstore;
+
+ create table register(
+    -> name varchar(90), email varchar(50), pass varchar(50), cpass varchar(50),
+    -> gender varchar(10), dob varchar(20), city varchar(30), country varchar(50),
+    -> address varchar(500));
+
+desc register;
+
+create table book(
+    -> isbn varchar(50), bookname varchar(500), quantity varchar(1000), price float);
+
+
+create table newbook(
+    -> isbn varchar(50), booktitle varchar(500), author varchar(100),
+    -> category varchar(50), quantity varchar(1000), price float);
+
+
+insert into book values('1', 'python', '10', 459.67),
+    -> ('2', 'gis', '5', 300);
+
+
+insert into newbook values('1', 'python', 'rossum', 'education', '10', 459.67);
+
+
+
+alter table register add primary key(email);
+
+desc register;
+
+ alter table book add column trash varchar(10);
+
+ alter table newbook add column trash varchar(10);
+
+ update book set trash = 'no';
+
+ update newbook set trash = 'no';
+
+ alter table newbook add primary key(isbn);

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Register Tab </title>
+    <link rel="stylesheet" href="styles.css" >
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" >
+</head>
+<body>
+    <div class="glass">
+        <h3> Registration </h3>
+        
+        <form action="Register" method="post">
+            <div class="inputWithIcon inputIconBg">
+                <input type="text" name = "p1" placeholder="Enter Your Full Name">
+                <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+            </div>
+
+            <div class="inputWithIcon inputIconBg">
+                <input type="text" name = "p2" placeholder="Enter Your Email">
+                <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+            </div>
+
+            <div class="inputWithIcon inputIconBg">
+                <input type="password" name = "p3" placeholder="Enter Your Password">
+                <i class="fa fa-key fa-lg fa-fw" aria-hidden="true"></i>
+            </div>
+
+            <div class="inputWithIcon inputIconBg">
+                <input type="password" name = "p4" placeholder="Enter Confirm Password">
+                <i class="fa fa-key fa-lg fa-fw" aria-hidden="true"></i>
+            </div>
+
+            <div class="rgn">
+                <span class="gname"> Gender: </span>
+                <div class="radio-inputs">
+                    <label class="radio">
+                    <input type="radio" name="radio" value="Male" checked="">
+                    <span class="name"> Male </span>
+                    </label>
+
+                    <label class="radio">
+                    <input type="radio" name="radio" value="Female">
+                    <span class="name"> Female </span>
+                    </label>
+                        
+                    <label class="radio">
+                    <input type="radio" name="radio" value="Others">
+                    <span class="name"> Others </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="rgn">
+                <span class="gname"> Date Of Birth : </span>
+                <input type="date" name = "p5" id="exampleInputDOB1" placeholder="Date of Birth" />
+            </div>
+
+            <div class="inputWithIcon inputIconBg">
+                <input type="text" name = "p6" placeholder="Enter Your City Name">
+                <i class="fa fa-building fa-lg fa-fw" aria-hidden="true"></i>
+            </div>
+
+            <div class="inputWithIcon inputIconBg">
+                <input type="text" name = "p7" placeholder="Enter Your Country Name">
+                <i class="fa fa-globe fa-lg fa-fw" aria-hidden="true"></i>
+            </div>
+
+            <div class="rgn">
+                <span class="gname"> Address </span>
+                <textarea id="w3review" name="p8" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="btns">
+                <p> <button type="submit"> Register </button> </p>
+            </div>
+        </form>
+    </div> <br> <br> <br> <br>
+</body>
+</html>

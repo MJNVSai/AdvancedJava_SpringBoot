@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Books Cart </title>
+    <style>
+      body {
+  font-family: sans-serif;
+}
+
+th, td {
+  border: 3px solid red;
+  padding:5px;
+  text-align:center;
+}
+
+table {
+  border-collapse: collapse;
+  border: 10px solid violet;
+}
+
+thead th {
+  width: 30%;
+}
+
+.cell-highlight {
+  background-color: gold;
+  font-weight: bold;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+thead {
+  background-color: #339;
+  color: white;
+  font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tbody th {
+  background-color: #36c;
+  color: #fff;
+  text-align: center
+}
+
+tbody tr:nth-child(even) th {
+  background-color: #25c;
+}
+
+.cen{
+  margin-top:25px;
+}
+
+  </style>
+</head>
+<body>
+  <center class="cen">
+<table>
+  <caption> <center> 2019 Fourth Quarter Report </center> </caption>
+  <thead>
+    <tr>
+      <th><!-- Intentionally Blank --></th>
+      <th>October</th>
+      <th>November</th>
+      <th>December</th>
+    <tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Projected</th>
+      <td>$820,180</td>
+      <td>$841,640</td>
+      <td>$732,270</td>
+    </tr>
+    <tr>
+      <th>Actual</th>
+      <td>$850,730</td>
+      <td>$892,580</td>
+      <td>$801,240</td>
+    </tr>
+    <tr>
+      <th>Utilization</th>
+      <td>83%</td>
+      <td class="cell-highlight">90%</td>
+      <td>75%</td>
+    </tr>
+  </tbody>
+</table>
+  </center>
+</body>
+</html>

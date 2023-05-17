@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Registration Form </title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.rt {
+          color: firebrick;
+          letter-spacing: 1px;
+        }
+	</style>
+
+</head>
+<body>
+
+<div class="card" align="center">
+  <div class="card-body">
+    <h1> Registration Form </h1>
+
+    <form action="loginservlet" method="GET">
+    	<div class="input-group input-group-lg">
+  			<span class="input-group-text" id="inputGroup-sizing-lg"> Name : </span>
+  			<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name = "R1">
+		</div> <br><br>
+
+		<div class="input-group input-group-lg">
+	  		<span class="input-group-text" id="inputGroup-sizing-lg"> UserName : </span>
+	  		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name = "R2">
+		</div> <br><br>
+
+		<div class="input-group input-group-lg">
+	  		<span class="input-group-text" id="inputGroup-sizing-lg"> Password : </span>
+	  		<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name = "R3">
+		</div> <br><br>
+
+		<div class="input-group input-group-lg">
+	  		<span class="input-group-text" id="inputGroup-sizing-lg"> Re-Type Password : </span>
+	  		<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name = "R4">
+		</div> <br><br>
+
+		<div class="form-group row">
+                    <h3 class="col-12 col-sm-2">  <strong>  Gender : </strong>  </h3>
+                    <div class="col">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="one_guest_radio" value="one" checked>
+                            <label class="form-check-label" for="one_guest_radio"> <strong> Male </strong> </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="one_guest_radio" value="one"/>
+                            <label class="form-check-label" for="one_guest_radio"> <strong> Female </strong> </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="one_guest_radio" value="one"/>
+                            <label class="form-check-label" for="one_guest_radio"> <strong> Others </strong> </label>
+                        </div>                 
+                   </div>
+                </div> <br><br>
+
+       <div class="form-group row">
+           <h4 class="col-12 col-sm-2"> <strong> Programming Skills :  </strong> </h4>
+                <div class="col">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="c1" id="one_guest_radio" value="one"/>
+                        <label class="form-check-label" for="one_guest_radio"> <strong> Java </strong> </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="c2" id="one_guest_radio" value="one"/>
+                        <label class="form-check-label" for="one_guest_radio"> <strong> Android </strong> </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="c3" id="one_guest_radio" value="one"/>
+                        <label class="form-check-label" for="one_guest_radio"> <strong> Ruby </strong> </label>
+                    </div> 
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="c4" id="one_guest_radio" value="one"/>
+                        <label class="form-check-label" for="one_guest_radio"> <strong> . Net </strong> </label>
+                    </div>                
+               </div>
+       </div> <br><br>
+
+       <div class="input-group input-group-lg">
+	  		<span class="input-group-text" id="inputGroup-sizing-lg"> Contact Number : </span>
+	  		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name = "R5">
+		</div> <br><br>
+
+		<div class="input-group input-group-lg">
+	  		<span class="input-group-text" id="inputGroup-sizing-lg"> Email : </span>
+	  		<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name = "R6">
+		</div> <br><br>
+
+		<div class="form-group row">
+			<h3 class="col-12 col-sm-2"> <strong>  College :  </strong> </h3>
+                <div class="col">
+                    <div class="dropdown">
+			   <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+			         Select a College
+			   </button>
+						  
+                        <select class="dropdown-menu dropdown-menu-dark" name="R7">
+                            <option class="dropdown-item active" value="VRSEC"> VRSEC </option>
+                            <option class="dropdown-item" value="PVP College"> PVP College </option>
+                            <option class="dropdown-item" value="VR Law College"> VR Law College </option>
+                            <option class="dropdown-divider" > </option>
+                            <option class="dropdown-item" value="VIT AP"> VIT AP </option>
+                        </select>
+		   </div>               
+               </div>
+       </div> <br><br>
+
+       <button type="submit" class="btn btn-success btn-lg">Submit</button>
+    </form>
+
+  </div>
+</div>
+
+</body>
+</html>

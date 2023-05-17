@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Link Web Page </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            .anchor
+		{
+			/* Box Model */
+			padding: 5px;
+		    margin: 10px;	/* 20px */
+		    border-radius: 9px; /* 520px */
+		    border-color: blue;
+		    border-style: double;
+		    border-width: 2px;	/* 5px */
+
+		    color: crimson;
+		    text-decoration: none;
+		    letter-spacing: 2px;
+   		}
+
+		.anchor:hover
+		{
+			color: white;
+			background-color: indianred;
+			/*transition-delay: 0.7s;*/
+		}
+        </style>
+    </head>
+    <body>
+    <center>
+        <br> <br>
+        <a href="index.html" class="anchor"> Home </a> | 
+        <a href="InboxServlet" class="anchor"> Inbox </a> |
+        <a href="ComposeServlet" class="anchor"> Compose Mail </a> |
+        <a href="SentServlet" class="anchor"> Sent Mail </a> |
+        <a href="TrashServlet" class="anchor"> Trash </a> |
+        <a href="LogoutServlet" class="anchor"> Logout </a>
+        <br> <br>
+        <hr/>
+    </center>
+    </body>
+</html>
