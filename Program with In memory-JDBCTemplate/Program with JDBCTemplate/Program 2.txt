@@ -1,0 +1,5 @@
+Create a Class Employee with three fields eno, ename and department.
+Create a constructor, setters and getters.
+Create a EmployeeService class to insert the employee details into the in-memory database and retrieve employee information.
+
+Test the application as a Spring Boot Application.

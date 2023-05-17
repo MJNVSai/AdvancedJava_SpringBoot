@@ -1,0 +1,47 @@
+
+package javaapplication12;
+
+  
+import java.sql.*;
+import java.util.*;
+public class JavaApplication12 {
+    public static void main(String args[])
+    {
+        try
+     {
+         Scanner s=new Scanner(System.in);
+         System.out.println("Enter values");
+         int a=s.nextInt();
+         String ss=s.next();
+
+         Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");         
+          Connection con=DriverManager.getConnection("jdbc:ucanaccess://C:\\e\\Emp.accdb");
+         Statement st=con.createStatement();
+         int c = st.executeUpdate("INSERT INTO emp"
+        + " (sno, sname)"
+        + " VALUES (105, 'harish')");
+     int insert = st.executeUpdate("insert into emp values(4,'kumar')");
+      int insertdynamic = st.executeUpdate("insert into emp values("+a+",'"+ss+"')");
+
+     int update = st.executeUpdate("update emp set sname='vrsec' where sno=105");
+     int delete = st.executeUpdate("delete from emp where sno=4");
+
+
+       
+     ResultSet rs=st.executeQuery("select * from emp");
+         while(rs.next())
+         {
+
+                 System.out.println("emp Number is:"+rs.getInt(1));
+                  System.out.println("emp name is:"+rs.getString(2));
+         }
+         
+
+     }
+         catch(Exception e)
+         {
+             System.out.println(e.getMessage());
+         }
+    }
+    
+}
